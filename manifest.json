@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+
+  "name": "xkcd Explainer",
+  "description": "Explains xkcd comics by adding a link to the explain xkcd wiki on the xkcd site",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches":
+        [
+        "http://xkcd.com/*",
+        "http://xkcd.org/*",
+        "http://xkcd.net/*",
+        "http://www.xkcd.com/*",
+        "http://www.xkcd.org/*",
+        "http://www.xkcd.net/*",
+        "https://xkcd.com/*",
+        "https://xkcd.org/*",
+        "https://xkcd.net/*",
+        "https://www.xkcd.com/*",
+        "https://www.xkcd.org/*",
+        "https://www.xkcd.net/*"
+        ],
+      "js": ["script.js"]
+    }
+  ],
+  "icons" :
+    {
+      "128": "icon.png"
+    }
+}
