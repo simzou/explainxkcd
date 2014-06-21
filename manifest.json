@@ -3,7 +3,7 @@
 
   "name": "xkcd Explainer",
   "description": "Explains xkcd comics by adding a link to the explain xkcd wiki on the xkcd site",
-  "version": "1.0",
+  "version": "1.1",
 
   "content_scripts": [
     {
@@ -22,7 +22,8 @@
         "https://www.xkcd.org/*",
         "https://www.xkcd.net/*"
         ],
-      "js": ["script.js"]
+      "js": ["script.js"],
+      "run_at" : "document_end"
     }
   ],
   "icons" :
